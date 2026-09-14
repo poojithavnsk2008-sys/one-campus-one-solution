@@ -1,0 +1,67 @@
+// Sample/Test data for demonstration purposes
+// This file contains mock data to test the app
+
+import '../models/course.dart';
+
+final List<Course> sampleCourses = [
+  Course(
+    id: '1',
+    name: 'Introduction to Flutter Development',
+    code: 'CS101',
+    instructor: 'Dr. John Smith',
+    description: 'Learn the basics of Flutter development, including widgets, state management, and building responsive mobile applications.',
+    students: ['student1', 'student2', 'student3'],
+    credits: 3,
+    schedule: 'Monday, Wednesday, Friday - 10:00 AM',
+    classroom: 'Room 101, Building A',
+    createdAt: DateTime.now(),
+  ),
+  Course(
+    id: '2',
+    name: 'Data Structures and Algorithms',
+    code: 'CS201',
+    instructor: 'Prof. Sarah Johnson',
+    description: 'Master fundamental data structures like arrays, linked lists, trees, and graphs. Learn algorithm design and complexity analysis.',
+    students: ['student1', 'student3', 'student4'],
+    credits: 4,
+    schedule: 'Tuesday, Thursday - 2:00 PM',
+    classroom: 'Room 205, Building B',
+    createdAt: DateTime.now(),
+  ),
+  Course(
+    id: '3',
+    name: 'Database Management Systems',
+    code: 'CS301',
+    instructor: 'Dr. Michael Chen',
+    description: 'Learn SQL, database design, normalization, and best practices for managing relational databases.',
+    students: ['student2', 'student4'],
+    credits: 3,
+    schedule: 'Monday, Wednesday - 1:00 PM',
+    classroom: 'Lab 301, Building C',
+    createdAt: DateTime.now(),
+  ),
+  Course(
+    id: '4',
+    name: 'Web Development with React',
+    code: 'CS401',
+    instructor: 'Emily Rodriguez',
+    description: 'Build modern web applications using React. Learn components, hooks, state management, and API integration.',
+    students: ['student1', 'student2', 'student3', 'student4'],
+    credits: 3,
+    schedule: 'Tuesday, Thursday, Saturday - 11:00 AM',
+    classroom: 'Room 401, Building A',
+    createdAt: DateTime.now(),
+  ),
+  Course(
+    id: '5',
+    name: 'Cloud Computing with AWS',
+    code: 'CS501',
+    instructor: 'Prof. David Williams',
+    description: 'Explore cloud infrastructure, AWS services, deployment, and scaling applications in the cloud.',
+    students: ['student2', 'student3'],
+    credits: 3,
+    schedule: 'Monday, Wednesday, Friday - 3:00 PM',
+    classroom: 'Room 501, Building D',
+    createdAt: DateTime.now(),
+  ),
+];
