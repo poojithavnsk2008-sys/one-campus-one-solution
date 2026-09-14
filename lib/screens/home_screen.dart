@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/auth_provider.dart';
+import 'courses_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -63,7 +64,7 @@ class _HomeScreenState extends State<HomeScreen> {
       case 0:
         return _buildHomeTab();
       case 1:
-        return _buildCoursesTab();
+        return const CoursesScreen();
       case 2:
         return _buildMessagesTab();
       case 3:
@@ -109,37 +110,6 @@ class _HomeScreenState extends State<HomeScreen> {
             icon: Icons.grade,
             title: 'Grades',
             description: 'Track your academic performance',
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildCoursesTab() {
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Icon(
-            Icons.book,
-            size: 80,
-            color: Colors.grey[300],
-          ),
-          const SizedBox(height: 20),
-          const Text(
-            'Courses',
-            style: TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-          const SizedBox(height: 10),
-          const Text(
-            'Coming soon...',
-            style: TextStyle(
-              fontSize: 16,
-              color: Colors.grey,
-            ),
           ),
         ],
       ),
